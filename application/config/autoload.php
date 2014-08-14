@@ -1,4 +1,5 @@
-<?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
+<?php  if (!defined('BASEPATH'))
+	exit('No direct script access allowed');
 /*
 | -------------------------------------------------------------------
 | AUTO-LOADER
@@ -37,8 +38,7 @@
 |
 */
 
-$autoload['packages'] = array();
-
+$autoload['packages'] = array ();
 
 /*
 | -------------------------------------------------------------------
@@ -52,8 +52,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('session');
-
+$autoload['libraries'] = array ( 'session' );
 
 /*
 | -------------------------------------------------------------------
@@ -64,8 +63,7 @@ $autoload['libraries'] = array('session');
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url', 'form');
-
+$autoload['helper'] = array ( 'url', 'form' );
 
 /*
 | -------------------------------------------------------------------
@@ -80,8 +78,7 @@ $autoload['helper'] = array('url', 'form');
 |
 */
 
-$autoload['config'] = array();
-
+$autoload['config'] = array ();
 
 /*
 | -------------------------------------------------------------------
@@ -96,8 +93,7 @@ $autoload['config'] = array();
 |
 */
 
-$autoload['language'] = array();
-
+$autoload['language'] = array ();
 
 /*
 | -------------------------------------------------------------------
@@ -109,7 +105,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array();
+$autoload['model'] = array ();
 
 
 /* End of file autoload.php */

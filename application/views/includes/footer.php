@@ -1,15 +1,15 @@
 <footer id="footer">
-    <div>
-        <div class="fttext text-center">Copyright © 2014 Errand-Boy
-                    | Twitter : <a href="https://twitter.com/api_craft" target="_Blank"><span
-                    class="fa fa-twitter soc"></span></a>
-                    | Facebook : <a href="https://www.facebook.com/apicrafttech" target="_Blank"><i
-                    class="fa fa-facebook soc"></i></a>
-                    | Google Plus: <a href="#" target="_Blank"><i
-                    class="fa fa-google-plus soc"></i></a>
-                    | Design by: <a rel="nofollow" href="http://www.api-crafttech.com" target="_blank">Api-Craft Technology</a>
-        </div>
-    </div>
+	<div>
+		<div class="fttext text-center">Copyright © 2014 Errand-Boy
+			| Twitter : <a href="https://twitter.com/api_craft" target="_Blank"><span
+						class="fa fa-twitter soc"></span></a>
+			| Facebook : <a href="https://www.facebook.com/apicrafttech" target="_Blank"><i
+						class="fa fa-facebook soc"></i></a>
+			| Google Plus: <a href="#" target="_Blank"><i
+						class="fa fa-google-plus soc"></i></a>
+			| Design by: <a rel="nofollow" href="http://www.api-crafttech.com" target="_blank">Api-Craft Technology</a>
+		</div>
+	</div>
 </footer>
 
 <script src="<?php echo base_url(); ?>js/application.js"></script>
