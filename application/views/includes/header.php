@@ -33,23 +33,16 @@
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href='<?php echo base_url() . "user/"; ?>'><span class="glyphicon glyphicon-lock"></span> Sign In</a>
-				</li>
-				<li><a href='<?php echo base_url() . "user/Signup"; ?>'><span class="glyphicon glyphicon-user"></span> Sign
-						Up</a></li>
-				<li class="dropdown">
-					<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span
-								class="glyphicon glyphicon-info-sign"></span> FAQ<b class="caret"></b></a>
-					<span class="dropdown-arrow"></span>
-					<ul class="dropdown-menu">
-						<li><a href="#">Why use Errand-Boy?</a></li>
-						<li><a href="#">How to make an order</a></li>
-						<li><a href="#">Term &amp; Conditions</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Contact Online Help <span class="glyphicon glyphicon glyphicon-phone-alt"></span></a>
-						</li>
-					</ul>
-				</li>
+				<li><a href='<?php echo base_url() . "lovetour/"; ?>'><span class="glyphicon glyphicon-home"></span>
+						Home</a></li>
+				<li><a href='<?php echo base_url() . "lovetour/portFolio"; ?>'><span class="glyphicon
+				glyphicon-briefcase"></span>
+						Portfolio</a></li>
+				<li><a href='<?php echo base_url() . "lovetour/aboutUs"; ?>'><span class="glyphicon glyphicon-info-sign"></span>
+						About Us</a></li>
+				<li><a href='<?php echo base_url() . "lovetour/contactUs"; ?>'><span class="glyphicon
+				glyphicon-envelope"></span>
+						Contact Us</a></li>
 			</ul>
 		</div>
 		<!--/.nav-collapse -->
