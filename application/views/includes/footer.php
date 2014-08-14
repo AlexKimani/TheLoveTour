@@ -1,6 +1,6 @@
 <footer id="footer">
 	<div>
-		<div class="fttext text-center">Copyright © 2014 Errand-Boy
+		<div class="fttext text-center">Copyright © 2014 The Love Tour
 			| Twitter : <a href="https://twitter.com/api_craft" target="_Blank"><span
 						class="fa fa-twitter soc"></span></a>
 			| Facebook : <a href="https://www.facebook.com/apicrafttech" target="_Blank"><i

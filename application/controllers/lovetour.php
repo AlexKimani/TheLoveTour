@@ -6,7 +6,7 @@ class Lovetour extends CI_Controller {
 		$index['title'] = "The Love Tour | Home";
 		$this->load->view('includes/Landingpage', $index);
 	}
-	
+
 	function portFolio() {
 		$portFolio['mainContent'] = 'pages/portFolio';
 		$portFolio['title'] = 'The Love Tour | Portfolio';
