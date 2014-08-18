@@ -391,7 +391,7 @@ class XML_RPC_Response {
 		} else if (!is_object($val)) {
 			// programmer error, not an object
 			error_log("Invalid type '" . gettype($val) .
-			"' (value: $val) passed to XML_RPC_Response.  Defaulting to empty value.");
+					"' (value: $val) passed to XML_RPC_Response.  Defaulting to empty value.");
 			$this->val = new XML_RPC_Values();
 		} else {
 			$this->val = $val;

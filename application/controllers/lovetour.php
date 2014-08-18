@@ -14,7 +14,7 @@ class Lovetour extends CI_Controller {
 	}
 
 	function aboutUs() {
-		$aboutUs['mainContent'] = 'pages/contactUs';
+		$aboutUs['mainContent'] = 'pages/aboutUs';
 		$aboutUs['title'] = 'The Love Tour | About Us';
 		$this->load->view('includes/Landingpage', $aboutUs);
 	}

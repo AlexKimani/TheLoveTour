@@ -614,7 +614,7 @@ class CI_Javascript {
 			$str = $this->_open_script($this->_javascript_location . $external_file);
 		} else {
 			$str = $this->_open_script($this->CI->config->slash_item('base_url') . $this->_javascript_location .
-			$external_file);
+					$external_file);
 		}
 
 		$str .= $this->_close_script();
