@@ -131,6 +131,50 @@ class CI_DB_driver {
 	// --------------------------------------------------------------------
 
 	/**
+	 * Display an error message
+	 *
+	 * @access    public
+	 * @param    string    the error message
+	 * @param    string    any "swap" values
+	 * @param    boolean    whether to localize the message
+	 * @return    string    sends the application/error_db.php template
+	 */
+	function display_error($error = '', $swap = '', $native = FALSE) {
+		$LANG =& load_class('Lang', 'core');
+		$LANG->load('db');
+
+		$heading = $LANG->line('db_error_heading');
+
+		if ($native == TRUE) {
+			$message = $error;
+		} else {
+			$message = (!is_array($error)) ? array ( str_replace('%s', $swap, $LANG->line($error)) ) : $error;
+		}
+
+		// Find the most likely culprit of the error by going through
+		// the backtrace until the source file is no longer in the
+		// database folder.
+
+		$trace = debug_backtrace();
+
+		foreach ($trace as $call) {
+			if (isset($call['file']) && strpos($call['file'], BASEPATH . 'database') === FALSE) {
+				// Found it - use a relative path for safety
+				$message[] = 'Filename: ' . str_replace(array ( BASEPATH, APPPATH ), '', $call['file']);
+				$message[] = 'Line Number: ' . $call['line'];
+
+				break;
+			}
+		}
+
+		$error =& load_class('Exceptions', 'core');
+		echo $error->show_error($heading, $message, 'error_db');
+		exit;
+	}
+
+	// --------------------------------------------------------------------
+
+	/**
 	 * Execute the query
 	 *
 	 * Accepts an SQL string as input and returns a result object upon
@@ -480,50 +524,6 @@ class CI_DB_driver {
 		}
 
 		return TRUE;
-	}
-
-	// --------------------------------------------------------------------
-
-	/**
-	 * Display an error message
-	 *
-	 * @access    public
-	 * @param    string    the error message
-	 * @param    string    any "swap" values
-	 * @param    boolean    whether to localize the message
-	 * @return    string    sends the application/error_db.php template
-	 */
-	function display_error($error = '', $swap = '', $native = FALSE) {
-		$LANG =& load_class('Lang', 'core');
-		$LANG->load('db');
-
-		$heading = $LANG->line('db_error_heading');
-
-		if ($native == TRUE) {
-			$message = $error;
-		} else {
-			$message = (!is_array($error)) ? array ( str_replace('%s', $swap, $LANG->line($error)) ) : $error;
-		}
-
-		// Find the most likely culprit of the error by going through
-		// the backtrace until the source file is no longer in the
-		// database folder.
-
-		$trace = debug_backtrace();
-
-		foreach ($trace as $call) {
-			if (isset($call['file']) && strpos($call['file'], BASEPATH . 'database') === FALSE) {
-				// Found it - use a relative path for safety
-				$message[] = 'Filename: ' . str_replace(array ( BASEPATH, APPPATH ), '', $call['file']);
-				$message[] = 'Line Number: ' . $call['line'];
-
-				break;
-			}
-		}
-
-		$error =& load_class('Exceptions', 'core');
-		echo $error->show_error($heading, $message, 'error_db');
-		exit;
 	}
 
 	// --------------------------------------------------------------------

@@ -40,7 +40,7 @@
 */
 
 $route['default_controller'] = "lovetour";
-$route['404_override'] = '';
+$route['404_override'] = 'pageNotFound';
 
 
 /* End of file routes.php */

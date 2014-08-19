@@ -136,7 +136,7 @@ class CI_DB_mysql_driver extends CI_DB {
 
 		if ($this->use_set_names === TRUE) {
 			return @mysql_query("SET NAMES '" . $this->escape_str($charset) . "' COLLATE '" . $this->escape_str($collation) .
-			"'", $this->conn_id);
+					"'", $this->conn_id);
 		} else {
 			return @mysql_set_charset($charset, $this->conn_id);
 		}
@@ -342,7 +342,7 @@ class CI_DB_mysql_driver extends CI_DB {
 		}
 
 		$query = $this->query($this->_count_string . $this->_protect_identifiers('numrows') . " FROM " .
-		$this->_protect_identifiers($table, TRUE, NULL, FALSE));
+				$this->_protect_identifiers($table, TRUE, NULL, FALSE));
 
 		if ($query->num_rows() == 0) {
 			return 0;
