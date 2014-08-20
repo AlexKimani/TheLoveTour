@@ -24,6 +24,12 @@ class Lovetour extends CI_Controller {
 		$contactUs['title'] = 'The Love Tour | Contact Us';
 		$this->load->view('includes/Landingpage', $contactUs);
 	}
+
+	function privacy() {
+		$privacy['mainContent'] = 'pages/privacy';
+		$privacy['title'] = 'The Love Tour | Contact Us';
+		$this->load->view('includes/Landingpage', $privacy);
+	}
 }
 
 

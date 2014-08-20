@@ -45,18 +45,27 @@
 
 			<div class="nav-collapse collapse pull-right">
 				<ul class="nav">
-					<li class="active"><a href='<?php echo base_url() . "lovetour/"; ?>'><b><i class="icon-home"></i>
+					<li class='<?= ($this->uri->segment(2) == "") ? "active" : "nonactive" ?>'><a
+								href='<?php echo base_url() .
+										"lovetour/"; ?>'><b><i class="icon-home"></i>
 								Home</b></a></li>
-					<li><a href='<?php echo base_url() . "lovetour/portFolio"; ?>'><b><i class="icon-briefcase"></i>
+					<li class='<?= ($this->uri->segment(2) == "portFolio") ? "active" : "nonactive" ?>'><a
+								href='<?php echo base_url
+										() . "lovetour/portFolio"; ?>'><b><i class="icon-briefcase"></i>
 								Portfolio</b></a></li>
-					<li><a href='<?php echo base_url() . "lovetour/aboutUs"; ?>'><b><i class="icon-info-sign"></i> About
+					<li class='<?= ($this->uri->segment(2) == "aboutUs") ? "active" : "nonactive" ?>'><a
+								href='<?php echo base_url
+										() . "lovetour/aboutUs"; ?>'><b><i class="icon-info-sign"></i> About
 								Us</b></a></li>
-					<li><a href='<?php echo base_url() . "lovetour/contactUs"; ?>'><b><i class="icon-envelope"></i>
+					<li class='<?= ($this->uri->segment(2) == "contactUs") ? "active" : "nonactive" ?>'><a
+								href='<?php echo base_url
+										() . "lovetour/contactUs"; ?>'><b><i class="icon-envelope"></i>
 								Contact</b></a></li>
 				</ul>
 			</div>
 			<!--/.nav-collapse -->
 		</div>
+		<div class="strip"></div>
 	</div>
 </header>
 <!-- /header -->

@@ -1,8 +1,8 @@
 <!-- /header -->
-
 <section class="no-margin">
-	<iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-	        src="https://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Dhaka,+Dhaka+Division,+Bangladesh&amp;aq=0&amp;oq=dhaka+ban&amp;sll=40.714353,-74.005973&amp;sspn=0.836898,1.815491&amp;ie=UTF8&amp;hq=&amp;hnear=Dhaka+Division,+Bangladesh&amp;t=m&amp;ll=24.542126,90.293884&amp;spn=0.124922,0.411301&amp;z=8&amp;output=embed"></iframe>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31910.286097633354!2d36.774473000000015!3d-1
+	.3035499999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a7083430795%3A0x85d1530b4ec100fb!2sNPC+Woodley!5e0!3m2!1sen
+	!2s!4v1408520690776" width="100%" height="500" frameborder="0" style="border:0"></iframe>
 </section>
 
 <section id="contact-page" class="container">

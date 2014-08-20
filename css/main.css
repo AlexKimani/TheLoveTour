@@ -473,7 +473,9 @@ header .dropdown-menu:before {
 
 #bottom h4 {
 	margin-top: 0;
-	margin-bottom: 15px
+	margin-bottom: 10px;
+	font-weight: bold;
+	text-transform: capitalize;
 }
 
 #bottom h1, #bottom h2, #bottom h3, #bottom h4, #bottom h5, #bottom h6 {
@@ -485,7 +487,7 @@ header .dropdown-menu:before {
 }
 
 #bottom a:hover {
-	color: #2dcc70
+	color: red;
 }
 
 #bottom ul.address > li {
@@ -502,14 +504,6 @@ header .dropdown-menu:before {
 	position: absolute;
 	top: 3px;
 	left: 0
-}
-
-#bottom ul.thumbnails {
-	margin-bottom: 0
-}
-
-#bottom ul.thumbnails li {
-	margin-bottom: 5px
 }
 
 ul.arrow, ul.arrow-double, ul.tick, ul.cross, ul.star, ul.rss {
@@ -552,7 +546,7 @@ ul.rss li::before {
 }
 
 #footer {
-	background:#000000;
+	background: #000000;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	color: #666
@@ -638,7 +632,7 @@ ul.social > li > a:hover {
 	font-size: 50px;
 	line-height: 50px;
 	padding-top: 10px;
-	font-family: "Fjalla One", sans-serif
+	font-family: sans, arial;
 }
 
 .blog .blog-item .date span.month {
@@ -703,7 +697,7 @@ textarea#message {
 .widget .date > span {
 	display: block;
 	text-align: center;
-	font-family: "Fjalla One";
+	font-family: sans, arial;
 	color: #fff
 }
 
@@ -908,4 +902,9 @@ ul.faq li > div h3 {
 	text-align: center;
 	margin-top: 150px;
 	margin-bottom: 150px
+}
+
+.strip {
+	background-color: darkred;
+	height: 8px;
 }

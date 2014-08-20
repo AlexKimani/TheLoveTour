@@ -9,7 +9,9 @@
 				<div class="sl-slide-inner">
 					<div class="container">
 						<img class="pull-right" src="<?php echo base_url(); ?>images/sample/slider/img1.png" alt=""/>
+
 						<h2>Creative Ideas</h2>
+
 						<h3 class="gap">Tincidunt condimentum eros</h3>
 						<a class="btn btn-large btn-transparent" href="#">Learn More</a>
 					</div>
@@ -22,7 +24,9 @@
 				<div class="sl-slide-inner">
 					<div class="container">
 						<img class="pull-right" src="<?php echo base_url(); ?>images/sample/slider/img2.png" alt=""/>
+
 						<h2>Planning &amp; Analysis</h2>
+
 						<h3 class="gap">Aenean ultricies mi vitast</h3>
 						<a class="btn btn-large btn-transparent" href="#">Learn More</a>
 					</div>
@@ -36,7 +40,9 @@
 				<div class="sl-slide-inner">
 					<div class="container">
 						<img class="pull-right" src="<?php echo base_url(); ?>images/sample/slider/img3.png" alt=""/>
+
 						<h2>Unique Solutions</h2>
+
 						<h3 class="gap">Breatures who have been utterly</h3>
 						<a class="btn btn-large btn-transparent" href="#">Learn More</a>
 					</div>
@@ -115,6 +121,7 @@
 			<div class="span2">
 				<div class="clearfix">
 					<h4 class="pull-left">OUR PARTNERS</h4>
+
 					<div class="pull-right">
 						<a class="prev" href="#myCarousel" data-slide="prev"><i class="icon-angle-left icon-large"></i></a>
 						<a class="next" href="#myCarousel" data-slide="next"><i class="icon-angle-right icon-large"></i></a>
